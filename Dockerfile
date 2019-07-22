@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER thomas.eliseu
+MAINTAINER diego.lima
 
 # persistent / runtime deps
 RUN apt-get update && apt-get install -y --no-install-recommends \
