@@ -14,7 +14,7 @@ For PHP projects run through the command line interface (CLI), you can do the fo
 
 ### Create a `Dockerfile` in your PHP project
 
-    FROM diegodeliima/php53-apache-mssql
+    FROM diegodeliima/php5.3-apache-mssql
     COPY . /usr/src/myapp
     WORKDIR /usr/src/myapp
     CMD [ "php", "./your-script.php" ]
@@ -28,7 +28,7 @@ Then, run the commands to build and run the Docker image:
 
 If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
 
-    docker run -it --rm --name my-php-app -v "$PWD":/var/www/html diegodeliima/php53-apache-mssql
+    docker run -it --rm --name my-php-app -v "$PWD":/var/www/html diegodeliima/php5.3-apache-mssql
 
 # License
 
