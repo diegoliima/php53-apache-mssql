@@ -116,8 +116,6 @@ RUN buildDeps=" \
 RUN echo "default_charset = " > $PHP_INI_DIR/php.ini \
     && echo "date.timezone = America/Sao_Paulo" >> $PHP_INI_DIR/php.ini
 
-RUN echo "[egServer70] host = ndbvsql.ndb.nmp.netzsch.com port = 1433 tds version = 7.0" > /etc/freetds/freetds.conf
-
 COPY docker-php-* /usr/local/bin/
 COPY apache2-foreground /usr/local/bin/
 
